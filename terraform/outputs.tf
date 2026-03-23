@@ -22,3 +22,13 @@ output "cluster_version" {
   description = "Redpanda version running on the cluster"
   value       = redpanda_cluster.gbac_test.redpanda_version
 }
+
+output "role_topic_admin" {
+  description = "Name of the topic-admin role"
+  value       = redpanda_role.topic_admin.name
+}
+
+output "role_readonly" {
+  description = "Name of the readonly role"
+  value       = redpanda_role.readonly.name
+}
