@@ -1,0 +1,18 @@
+# Copy this file to terraform.tfvars and fill in your values
+
+resource_group_name = "gbac-test-rg"
+network_name        = "gbac-test-network"
+cluster_name        = "gbac-test-cluster"
+cloud_provider      = "aws"
+region              = "us-east-2"
+zones               = ["use2-az1", "use2-az2", "use2-az3"]
+throughput_tier     = "tier-1-aws-v2-x86"
+redpanda_version    = "v26.1.1-rc4"
+cidr_block          = "10.0.0.0/20"
+
+# Dataplane
+user_name      = "gbac-test-user"
+user_password  = "Chang3Me!Secur3"
+topic_name     = "gbac-test-topic"
+partition_count = 3
+replication_factor = 3
